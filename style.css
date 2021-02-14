@@ -1,0 +1,117 @@
+body { min-height: 100vh; display: flex; flex-direction: column; 
+background-image: url("bg-space.png");}
+header{ } 
+main{flex-grow: 1;} 
+footer{ }
+
+/* *{
+    border: 1px solid red;
+} */
+
+.shadow {
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgb(0, 197, 197));
+}
+
+.card {
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+}
+
+.rotate {
+    width: 100%;
+    height: 100%;
+    animation-name: circle;
+    position: relative;
+    animation-duration: 100000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes circle {
+    from {transform: rotateZ(0deg)}
+    to {transform: rotateZ(360deg)}
+}
+
+.btn-upgrades {
+    width: 50%;
+}
+
+
+img {
+    max-width: 90%;
+    max-height: 90%;
+    user-select: none;
+} 
+
+.img-icon {
+    max-height: 10%;
+    max-width: 10%;
+}
+.img-icon:hover {
+    transform: scale(1.5);
+}
+
+.img-container {
+    position: relative;
+    text-align: center;
+}
+
+.img-bottom-left {
+    position: absolute;
+    bottom: 30%;
+    left: 30%;
+}
+
+.img-bottom {
+    position: absolute;
+    bottom: 30%;
+    left: 45%;
+}
+
+.img-bottom-right {
+    position: absolute;
+    bottom: 30%;
+    right: 30%;
+}
+
+.img-top-right {
+    position: absolute;
+    top: 30%;
+    right: 30%;
+}
+
+.img-top-left {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.title-border {
+    position: relative;
+}
+  
+.title-border:after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 25%;
+    width: 50%;
+    border-bottom: 2px solid black;
+}
+
+.hidden {
+    display: none;
+}
+/*768px or larger*/
+@media only screen and (min-width: 769px) {
+    
+}
+
+/*767px or smaller*/
+@media only screen and (max-width: 768px) {
+    .img-icon {
+        transform: scale(2.5)
+    }
+    
+}
