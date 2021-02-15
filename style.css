@@ -52,6 +52,10 @@ img {
     transform: scale(1.5);
 }
 
+.img-icon:active {
+    transform: scale(1.25);
+}
+
 .img-container {
     position: relative;
     text-align: center;
