@@ -1,9 +1,9 @@
 let baseGained = 1
 
 let resources = {
-    ore: 500,
-    water: 1000,
-    logs: 1500,
+    ore: 0,
+    water: 0,
+    logs: 0,
 }
 
 let clickUpgrades = {
