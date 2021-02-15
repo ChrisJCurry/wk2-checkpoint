@@ -11,15 +11,15 @@ let resources = {
 let clickUpgrades = {
     double: {
         amount: 0,
-        cost: 100
+        cost: 400
     },
     triple: {
         amount: 0,
-        cost: 250
+        cost: 900
     },
     quadruple: {
         amount: 0,
-        cost: 300
+        cost: 1500
     }
 }
 
