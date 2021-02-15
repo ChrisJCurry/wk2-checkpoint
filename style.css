@@ -2,14 +2,13 @@ body { min-height: 100vh; display: flex; flex-direction: column;
 background-image: url("bg-space.png");}
 header{ } 
 main{flex-grow: 1;} 
-footer{ }
-
+footer{ position: fixed; bottom: 0; width: 100%;}
 /* *{
     border: 1px solid red;
 } */
 
 .shadow {
-    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgb(0, 197, 197));
+    filter: drop-shadow(0.35rem 0.35rem 0.3rem rgb(0, 82, 175));
 }
 
 .card {
@@ -33,8 +32,12 @@ footer{ }
     to {transform: rotateZ(360deg)}
 }
 
-.btn-upgrades {
-    width: 50%;
+.resource {
+    width: 85%;
+    margin-left: 7%;
+    padding: 2.5%;
+    color: white;
+    border-radius: 5%;
 }
 
 
@@ -44,10 +47,7 @@ img {
     user-select: none;
 } 
 
-.img-icon {
-    max-height: 10%;
-    max-width: 10%;
-}
+
 .img-icon:hover {
     transform: scale(1.5);
 }
@@ -106,12 +106,25 @@ img {
 /*768px or larger*/
 @media only screen and (min-width: 769px) {
     
+.btn-upgrades {
+    width: 85%;
+}
+.img-icon {
+    max-height: 15%;
+    max-width: 15%;
+}
 }
 
 /*767px or smaller*/
 @media only screen and (max-width: 768px) {
     .img-icon {
-        transform: scale(2.5)
+        transform: scale(2.5);
+        max-height: 10%;
+        max-width: 10%;
     }
+
+    .btn-sm-upgrades {
+        width: 85%;
+    }   
     
 }
